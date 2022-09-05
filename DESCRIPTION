@@ -1,0 +1,25 @@
+Package: voomst
+Title: Variance Stabilizing Transformation with Voom
+Version: 0.1.0.0
+Authors@R: 
+    person(given = "Zhonghui",
+           family = "Xu",
+           role = c("aut", "cre"),
+           email = "rezxu@channing.harvard.edu")
+Description: Provides functionalities to estimate gene-wise count based negative
+             binomial dispersions from log-cpm based mean-variance trend in limma::voom,
+             and to derive variance stabilizing transformation similar as in DEXSeq.
+             This enables derivation of dispersion estimates and variance stabilizing
+             transformation from the popular limma-voom RNA-seq pipeline, without
+             fitting negative binomial model that is slow and less flexible. The
+             derived variance stabilizing transformation can be used to transform
+             the RNA-seq read counts for downstream applications such as visualization
+             and machine learning.
+License: GPL (>= 2)
+Depends: R (>= 3.5.0)
+Suggests: DESeq2, limma, DEFormats
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 6.1.1
